@@ -23,7 +23,7 @@ public class TrackerController {
     }
     @GetMapping()
     public  ResponseEntity<List<Tournaments>> getAllTournaments(){
-        return  new ResponseEntity<>(tournamentservice.getAll(),HttpStatus.OK);
+        return new ResponseEntity<>(tournamentservice.getAll(),HttpStatus.OK);
     }
     @GetMapping("/{userid}")
     public ResponseEntity<List<Tournaments>> getById(@PathVariable ObjectId userid){

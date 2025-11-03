@@ -4,7 +4,6 @@ import com.mediaTech.tournamentTracker.Entity.Users;
 import com.mediaTech.tournamentTracker.Repository.UserRepo;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

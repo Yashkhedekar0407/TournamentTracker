@@ -1,15 +1,12 @@
 package com.mediaTech.tournamentTracker.Entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Document(collection = "tournament_details")
 public class Tournaments {
@@ -36,10 +33,6 @@ public class Tournaments {
         this.date = date;
         this.note = note;
         this.userId = userId;
-    }
-
-    public Tournaments(){
-        System.out.println( "tounament constructor is working");
     }
 
     public ObjectId getUserId() {
